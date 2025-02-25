@@ -53,7 +53,6 @@ module wb_bus(
         .tx(io_out[13:13]),
         .IRQ(user_irq[0])
     );
-    assign io_oen[13:12] = 2'b10;
 
     // Instantiate slave UART1 of type EF_UART_WB
     EF_UART_WB UART1 (
@@ -70,7 +69,7 @@ module wb_bus(
         .tx(io_out[15:15]),
         .IRQ(user_irq[1])
     );
-    assign io_oen[15:14] = 2'b10;
+
     // Instantiate slave PORTA of type EF_GPIO8_WB
     EF_GPIO8_WB PORTA (
         .clk_i(wb_clk),
@@ -137,10 +136,10 @@ module wb_bus(
     assign io_out[10] = 1'b0;
     assign io_oen[11] = 1'b1;
     assign io_out[11] = 1'b0;
-    assign io_oen[14] = 1'b1;
-    assign io_out[14] = 1'b0;
+    assign io_oen[12] = 1'b0;
+    assign io_oen[13] = 1'b1;
+    assign io_oen[14] = 1'b0;
     assign io_oen[15] = 1'b1;
-    assign io_out[15] = 1'b0;
     assign io_oen[24] = 1'b1;
     assign io_out[24] = 1'b0;
     assign io_oen[25] = 1'b1;
