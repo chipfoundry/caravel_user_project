@@ -18,30 +18,35 @@
 from caravel_cocotb.caravel_interfaces import test_configure
 from caravel_cocotb.caravel_interfaces import report_test
 import cocotb
+from user_proj_tests.uart import ML_UART_BASE
+import string
+import random
 
 @cocotb.test()
 @report_test
-async def counter_la_clk(dut):
-    caravelEnv = await test_configure(dut,timeout_cycles=61011)
+async def uart0(dut):
+    caravelEnv = await test_configure(dut, timeout_cycles=159844)
 
-    cocotb.log.info(f"[TEST] Start counter_wb test")  
+    cocotb.log.info(f"[TEST] Start counter_la test")  
     # wait for start of sending
     await caravelEnv.release_csb()
+    uart = UART_USER(caravelEnv, prescaler=2)
     await caravelEnv.wait_mgmt_gpio(1)
     cocotb.log.info(f"[TEST] finish configuration") 
-    overwrite_val = 0 # because of the reset 
-    # expect value bigger than 7 
-    received_val = int ((caravelEnv.monitor_gpio(37,30).binstr + caravelEnv.monitor_gpio(7,0).binstr ),2)  
-    counter = received_val
-
-    for i in range(5):
-        if counter != int ((caravelEnv.monitor_gpio(37,30).binstr + caravelEnv.monitor_gpio(7,0).binstr ),2) :
-            cocotb.log.error(f"counter have wrong value expected = {counter} recieved = {int ((caravelEnv.monitor_gpio(37,30).binstr + caravelEnv.monitor_gpio(7,0).binstr ),2) }")
-        await wait_la_clock_cycle(caravelEnv)
-        counter +=1
-
-    
-async def wait_la_clock_cycle(caravelEnv): 
-    # clock is synced with mgmt_gpio
+    # generate rondom msg
+    chars = string.ascii_letters + string.digits
+    msg = ''.join(random.choice(chars) for _ in range(10))
+    cocotb.log.info(f"[TEST] random msg = {msg}")
+    # send random msg
+    await uart.uart_send_line(msg)
+    # recieve random msg
+    msg_rec = await uart.get_line()
+    if msg != msg_rec:
+        cocotb.log.error(f"[TEST] test failed, recieved msg != sent msg, recieved: {msg_rec}, sent: {msg}")
     await caravelEnv.wait_mgmt_gpio(0)
-    await caravelEnv.wait_mgmt_gpio(1)
+
+
+class UART_USER(ML_UART_BASE):
+    def __init__(self, caravelEnv, uart_pins={"tx": 13, "rx": 12}, prescaler=0):
+        super().__init__(caravelEnv, uart_pins, prescaler)
+        pass

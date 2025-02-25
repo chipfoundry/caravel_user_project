@@ -13,9 +13,9 @@
 # limitations under the License.
 
 # SPDX-License-Identifier: Apache-2.0
-
 # Yalm file contain general design information that would mostly need to be updated in the first run only 
+
 Tests: 
-    - {name: counter_la_reset, sim: RTL}
+    - {name: uart0, sim: RTL}
 
 
