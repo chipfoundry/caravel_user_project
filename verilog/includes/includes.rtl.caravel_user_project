@@ -17,4 +17,11 @@
 -v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v	     
 -v $(USER_PROJECT_VERILOG)/rtl/user_proj_example.v
 
+-v $(USER_PROJECT_VERILOG)/../ip/EF_GPIO8/hdl/rtl/bus_wrappers/EF_GPIO8_WB.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_GPIO8/hdl/rtl/EF_GPIO8.v
+
+-v $(USER_PROJECT_VERILOG)/../ip/EF_UART/hdl/rtl/bus_wrappers/EF_UART_WB.v
+-v $(USER_PROJECT_VERILOG)/../ip/EF_UART/hdl/rtl/EF_UART.v
+
+-v $(USER_PROJECT_VERILOG)/../ip/EF_IP_UTIL/hdl/ef_util_lib.v
  
