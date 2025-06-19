@@ -25,7 +25,7 @@ SIM?=RTL
 CARAVEL_LITE?=1
 
 # PDK switch varient
-export PDK?=sky130A
+export PDK?=sky130B
 #export PDK?=gf180mcuC
 export PDKPATH?=$(PDK_ROOT)/$(PDK)
 
@@ -44,7 +44,7 @@ export ROOTLESS
 
 ifeq ($(PDK),sky130A)
 	SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
-	export OPEN_PDKS_COMMIT_LVS?=6d4d11780c40b20ee63cc98e645307a9bf2b2ab8
+	export OPEN_PDKS_COMMIT_LVS?=823ec23c421cfb1d6aec06b8140cbde11cbc95a0
 	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
 	export OPENLANE_TAG?=2023.07.19-1
 	MPW_TAG ?= CC2509
