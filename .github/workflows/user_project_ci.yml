@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        targets: ["pdk-with-volare", "install_mcw", "openlane", "setup-timing-scripts", "precheck"]
+        targets: ["pdk-with-ciel", "install_mcw", "openlane", "setup-timing-scripts", "precheck"]
     needs: [download_caravel]
     steps:
       - uses: actions/checkout@v4
@@ -80,7 +80,7 @@ jobs:
           elif [[ "${{ matrix.targets }}" == "openlane" ]]; then
             echo "dep_name=openlane" >> $GITHUB_ENV
             echo "dep_root=${{ env.OPENLANE_ROOT }}" >> $GITHUB_ENV
-          elif [[ "${{ matrix.targets }}" == "pdk-with-volare" ]]; then
+          elif [[ "${{ matrix.targets }}" == "pdk-with-ciel" ]]; then
             echo "dep_name=pdk" >> $GITHUB_ENV
             echo "dep_root=${{ env.PDK_ROOT }}" >> $GITHUB_ENV
           elif [[ "${{ matrix.targets }}" == "setup-timing-scripts" ]]; then
