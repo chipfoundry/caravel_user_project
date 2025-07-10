@@ -177,6 +177,9 @@ jobs:
 
       - name: Harden using Openlane
         run: |
+          python3 -m venv venv
+          source venv/bin/activate
+          pip install --upgrade --no-cache-dir ceil
           python3 $GITHUB_WORKSPACE/.github/scripts/get_designs.py --design $GITHUB_WORKSPACE
           for word in $(cat harden_sequence.txt); do
             echo "CURRENT_DESIGN=${word}" >> $GITHUB_ENV
