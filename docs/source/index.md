@@ -25,6 +25,7 @@ This repository contains a sample user project for the [Caravel](https://github.
 
 - Docker: [Linux](https://docs.docker.com/desktop/install/linux-install/r) | [Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=header) | [Mac with Intel Chip](https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=header) | [Mac with M1 Chip](https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=header)
 - Python 3.8+ with PIP
+- With python3-tk and python3-venv. On Debian/Ubuntu: `sudo apt-get install -y python3-venv python3-tk`
 
 ## Quickstart
 
@@ -50,7 +51,7 @@ This repository contains a sample user project for the [Caravel](https://github.
 
    - caravel_lite
    - Management core for simulation
-   - OpenLane for design hardening
+   - LibreLane for design hardening
    - PDK
    - Timing scripts
 
