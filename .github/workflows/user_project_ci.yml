@@ -73,7 +73,7 @@ jobs:
           path: |
             ${{ github.workspace }}/gds
             ${{ github.workspace }}/signoff
-            ${{ github.workspace }}/openlane/*/runs/ci
+            ${{ github.workspace }}/runs
             ${{ github.workspace }}/.cf/project.json
           retention-days: 1
 
