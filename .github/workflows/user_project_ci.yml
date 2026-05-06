@@ -236,6 +236,7 @@ jobs:
           with open(project_json, 'w') as f:
               json.dump(data, f, indent=2)
           EOF
+          sed -i '/USER_CONFIG/s/INVALID/USER_STD_INPUT_NOPULL/' verilog/rtl/user_defines.v
 
       - name: Run Precheck
         run: |
