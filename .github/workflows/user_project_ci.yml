@@ -58,11 +58,12 @@ jobs:
           cf setup --pdk ${{ matrix.pdk }} --only-openlane --only-pdk
 
       - name: Harden Designs
+        continue-on-error: true
         run: |
           set -e
           python3 .github/scripts/get_designs.py --design ${{ github.workspace }}
           for design in $(cat harden_sequence.txt); do
-            cf harden --tag ci $design 
+            cf harden --tag ci $design
           done
 
       - name: Upload Hardened Design
@@ -75,6 +76,10 @@ jobs:
             ${{ github.workspace }}/openlane/*/runs/ci
             ${{ github.workspace }}/.cf/project.json
           retention-days: 1
+
+      - name: Fail if harden failed
+        if: steps.harden.outcome == 'failure'
+        run: exit 1
 
   rtl-verification:
     timeout-minutes: 720
