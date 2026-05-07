@@ -241,3 +241,12 @@ jobs:
       - name: Run Precheck
         run: |
           cf precheck
+
+      - name: Upload failed precheck artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: design-${{ matrix.pdk }}
+          path: |
+            ${{ github.workspace }}/precheck_results
+          retention-days: 1
+
