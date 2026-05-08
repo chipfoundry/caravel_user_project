@@ -236,7 +236,9 @@ jobs:
           with open(project_json, 'w') as f:
               json.dump(data, f, indent=2)
           EOF
-          sed -i '/USER_CONFIG/s/INVALID/USER_STD_INPUT_NOPULL/' verilog/rtl/user_defines.v
+          # Set gpio 5, 6, 7, 30-37 to USER_STD_OUTPUT
+          sed -i -e '/USER_CONFIG_GPIO_[3567]/s/INVALID/USER_STD_OUTPUT/' \
+              -e '/USER_CONFIG/s/INVALID/MGMT_STD_ANALOG/' verilog/rtl/user_defines.v
 
       - name: Run Precheck
         continue-on-error: true
