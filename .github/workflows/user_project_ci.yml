@@ -228,7 +228,7 @@ jobs:
           # Replace these with the known-good checksums for the default design
           DEFAULT_UPW_SHA256="db2d0bd579f1a7db73f46d838ed2af1e88aa3d73585a7c23db6e4203762081ca"
           DEFAULT_UPE_SHA256="af1666e007dca72d851932f0a88370897302287088fa03d8687d10c607fa5e9d"
-          DEFAULT_UD_SHA256="8c1ee6abdc09b6b4e9cf6204e7a6275ef5ba8df850f312b7e78cee779349e2eb"
+          DEFAULT_UD_SHA256="ab6e82ca9b069050b77ac0f74c5c9574f6a0eb4a09f96245490e89bd0f6ce6f7"
 
           upw_sha=$(sha256sum "$UPW" | awk '{print $1}')
           upe_sha=$(sha256sum "$UPE" | awk '{print $1}')
