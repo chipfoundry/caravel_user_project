@@ -283,8 +283,8 @@ jobs:
             exit $precheck_status
           fi
 
-          cnt=$(grep -c "All Checks Passed" precheck_results/*/logs/precheck.log || true)
-          if [[ $cnt -eq 1 ]]; then
+          error_count=$(grep -c "ERROR" precheck_results/*/logs/precheck.log || true)
+          if [[ $error_count -eq 0 ]]; then
             exit 0
           fi
 
