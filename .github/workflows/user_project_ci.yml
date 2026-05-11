@@ -64,7 +64,8 @@ jobs:
           set -e
           python3 .github/scripts/get_designs.py --design ${{ github.workspace }}
           for design in $(cat harden_sequence.txt); do
-            cf harden --tag ci $design
+            mkdir -p openlane/$design/runs/ci
+            cf harden --tag ci $design | tee openlane/$design/runs/ci/ci.log
           done
 
       - name: Upload Hardened Design
@@ -74,7 +75,7 @@ jobs:
           path: |
             ${{ github.workspace }}/gds
             ${{ github.workspace }}/signoff
-            ${{ github.workspace }}/runs
+            ${{ github.workspace }}/*lane/*/runs/ci
             ${{ github.workspace }}/.cf/project.json
           retention-days: 1
 
