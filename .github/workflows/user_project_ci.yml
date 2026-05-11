@@ -58,6 +58,7 @@ jobs:
           cf setup --pdk ${{ matrix.pdk }} --only-openlane --only-pdk
 
       - name: Harden Designs
+        id: harden
         continue-on-error: true
         run: |
           set -e
