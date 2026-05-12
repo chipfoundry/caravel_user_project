@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>SKY130 DRC runset</description>
+ <original-file/>
+ <generator>drc: script='/usr/local/lib/python3.9/site-packages/cf_precheck/drc_scripts/sky130A_mr.drc'</generator>
+ <top-cell>user_project_wrapper</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>MRW_dnwell.WID.1</name>
+   <description>MRW_dnwell.WID.1: min. dnwell width : 3.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MRW_dnwell.SP.1</name>
+   <description>MRW_dnwell.SP.1 : min. dnwell spacing : 6.3um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nwell.WID.1</name>
+   <description>MR_nwell.WID.1 : min. nwell width : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nwell.SP.1</name>
+   <description>MR_nwell.SP.1 : min. nwell spacing (merged if less) : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nwell.ENC.1</name>
+   <description>MR_nwell.ENC.1 : min enclosure of nwellHole by dnwell : 1.03um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nwell.CON.1</name>
+   <description>MR_nwell.CON.1 : HVnwell must be enclosed by hv marker</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_hvtp.WID.1</name>
+   <description>MR_hvtp.WID.1 : min. hvtp width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_hvtp.SP.1</name>
+   <description>MR_hvtp.SP.1 : min. hvtp spacing : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>pwde.1</name>
+   <description>pwde.1 : min. pwde width : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_pwde.SP.1</name>
+   <description>MR_pwde.SP.1 : min. pwde inside v20 spacing : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvtr.1</name>
+   <description>hvtr.1 : min. hvtr width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvtr.2</name>
+   <description>hvtr.2 : min. hvtr spacing : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_hvtr.CON.1</name>
+   <description>MR_hvtr.CON.1 : hvtr must not overlap hvtp</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>lvtn.1a</name>
+   <description>lvtn.1a : min. lvtn width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>lvtn.2</name>
+   <description>lvtn.2 : min. lvtn spacing : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_lvtn.OVL.2</name>
+   <description>MR_lvtn.OVL.2 : lvtn must not straddle nwell</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_ncm.WID.1</name>
+   <description>MR_ncm.WID.1 : min. ncm width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ncm.2a</name>
+   <description>ncm.2a : min. ncm spacing : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.1</name>
+   <description>difftap.1 : min. diff width across areaid:ce : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.1_a</name>
+   <description>difftap.1_a : min. diff width in periphery : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.2</name>
+   <description>difftap.2 : min. diff width inside areadid:ce : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.1_b</name>
+   <description>difftap.1_b : min. tap width across areaid:ce : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_diff.WID.2</name>
+   <description>MR_diff.WID.2 : min. tap width in periphery : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.3</name>
+   <description>difftap.3 : min. difftap spacing : 0.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>tunm.1</name>
+   <description>tunm.1 : min. tunm width : 0.41um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>tunm.2</name>
+   <description>tunm.2 : min. tunm spacing : 0.5um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_tunm.CON.1</name>
+   <description>MR_tunm.CON.1 : use of layer tunm is prohibited</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>thkox.1</name>
+   <description>thkox.1 : min. thkox width inside periphery : 0.6um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>thkox.2</name>
+   <description>thkox.2 : min. thkox spacing inside periphery : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_thkox.CON.1</name>
+   <description>MR_thkox.CON.1 : thkox must not straddle diff</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_hv.SP.10</name>
+   <description>MR_hv.SP.10 : ndiff inside (v12, v20 and thkox) minimum spacing when non-abutting ptap : 1.07um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_poly.WID.2</name>
+   <description>MR_poly.WID.2 : min. poly width : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_poly.SP.1</name>
+   <description>MR_poly.SP.1 : min. poly spacing : 0.21um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_poly.SP.4</name>
+   <description>MR_poly.SP.4 : min. poly spacing inside areaid:core : 0.16um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_poly.LEN.2</name>
+   <description>MR_poly.LEN.2 : poly:res minimum length for rpoly_hp and rpoly_hp2K resistors : 0.66um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_poly.WID.3</name>
+   <description>MR_poly.WID.3 : poly:res minimum width : 0.33um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ldntm.1</name>
+   <description>ldntm.1 : min. ldntm width inside areaid:core : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ldntm.2</name>
+   <description>ldntm.2 : min. ldntm spacing inside areaid:core : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_rpm.WID.1</name>
+   <description>MR_rpm.WID.1 : min. rpm width : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_rpm.SP.1</name>
+   <description>MR_rpm.SP.1 : min. rpm spacing : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_rdl.WID.1</name>
+   <description>MR_rdl.WID.1 : min. rdl width : 10um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_rdl.SP.1</name>
+   <description>MR_rdl.SP.1 : min. rdl spacing : 10um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_rdl.CON.1</name>
+   <description>MR_rdl.CON.1 : use of rdl layer is prohibited</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_urpm.WID.1</name>
+   <description>MR_urpm.WID.1 : min. rpm width : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_urpm.SP.1</name>
+   <description>MR_urpm.SP.1 : min. rpm spacing : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_npc.WID.1</name>
+   <description>MR_npc.WID.1 : min. npc width : 0.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>npc.2</name>
+   <description>npc.2 : min. npc spacing, should be manually merged if less than : 0.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsdm.SP.1</name>
+   <description>MR_nsdm.SP.1 : min. nsdm spacing in periphery : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsdm.WID.2</name>
+   <description>MR_nsdm.WID.2 : min. nsdm width in periphery : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsdm.WID.1</name>
+   <description>MR_nsdm.WID.1 : min. diff width across areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsdm.SP.2</name>
+   <description>MR_nsdm.SP.2 : min. spacing across areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsdm.WID.3</name>
+   <description>MR_nsdm.WID.3 : min. nsdm width in areaid:ce : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsdm.SP.3</name>
+   <description>MR_nsdm.SP.3 : min. nsdm spacing in areaid:ce : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsdm.6a</name>
+   <description>nsdm.6a : min. nsdm spacing on parallel edges in areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_psdm.SP.1</name>
+   <description>MR_psdm.SP.1 : min. psdm spacing in periphery : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_psdm.WID.2</name>
+   <description>MR_psdm.WID.2 : min. psdm width in periphery : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_psdm.WID.1</name>
+   <description>MR_psdm.WID.1 : min. diff width across areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_psdm.SP.2</name>
+   <description>MR_psdm.SP.2 : min. spacing across areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_psdm.WID.3</name>
+   <description>MR_psdm.WID.3 : min. psdm width in areaid:ce : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_psdm.SP.3</name>
+   <description>MR_psdm.SP.3 : min. psdm spacing in areaid:ce : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>psdm.6a</name>
+   <description>psdm.6a : min. psdm spacing on parallel edges in areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsdm_psdm_overlap</name>
+   <description>nsdm_psdm_overlap : nsdm overlaps psdm over active</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.1_c</name>
+   <description>licon.1_c : licon should be rectangle</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.1</name>
+   <description>MR_licon.SP.1: min. licon spacing in periphery : 0.17um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.1</name>
+   <description>licon.1: min/max. licon length : 0.17um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.13</name>
+   <description>licon.13:  min. licon on diff spacing to npc in periphery : 0.09um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.13_a</name>
+   <description>licon.13_a:  licon on diff in periphery can't overlap npc</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.17</name>
+   <description>licon.17 : Licons may not overlap both poly and (diff or tap)</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.6</name>
+   <description>licon.6 : npc min enclosure of poly_licon inside areaid:core : 0.045um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.ANG.1</name>
+   <description>MR_licon.ANG.1 : licon outside areaid:seal must be orthogonal</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.CON.13</name>
+   <description>MR_licon.CON.13 : licon bar outside prec_resistor is prohibited</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.CON.xx</name>
+   <description>MR_licon.CON.xx : licon square interacting with rpm/urpm is prohibited</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.2</name>
+   <description>MR_licon.SP.2 : licon bar end to end minimum spacing : 0.35um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.3</name>
+   <description>MR_licon.SP.3 : licon bar side to side minimum spacing : 0.51um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.4</name>
+   <description>MR_licon.SP.4 : licon bar minimum space to licon square : 0.51um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MRW_licon.SP.15</name>
+   <description>MRW_licon.SP.15 : 0.25 um width bar licons (post-maskgen) spacing &lt; 0.58um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MRW_licon.SP.16</name>
+   <description>MRW_licon.SP.16 : 0.19 um width bar licons (post-maskgen) side-to-side spacing &lt; 0.51um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.5</name>
+   <description>MR_licon.SP.5 : tap_licon minimum space to tap edge abutting diff : 0.06um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.6</name>
+   <description>MR_licon.SP.6 : poly_licon minimum space to psdm (overlap prohibited) : 0.11um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.8</name>
+   <description>MR_licon.SP.8 : licon on diff minimum space to gate outside areaid:standardc (overlap prohibited) : 0.055um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.WID.1</name>
+   <description>MR_licon.WID.1 : licon (non-bar) minimum/maximum width : 0.17um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.WID.2</name>
+   <description>MR_licon.WID.2 : licon bar exact length : 2.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsm.SP.1</name>
+   <description>MR_nsm.SP.1 : nsm min. spacing : 4.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsm.WID.1</name>
+   <description>MR_nsm.WID.1 : nsm min. width : 3.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_capm.WID.1</name>
+   <description>MR_capm.WID.1 : min. capm width : 1.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_capm.SP.1</name>
+   <description>MR_capm.SP.1 : min. capm spacing : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_capm.SP.2</name>
+   <description>MR_capm.SP.2 : Min spacing of capm and met3 not overlapping capm : 0.5um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_capm.ENC.1</name>
+   <description>MR_capm.ENC.1 : min. m3 enclosure of capm : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_capm.ENC.2</name>
+   <description>MR_capm.ENC.2 : min. capm enclosure of via3 : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_capm.SP.3</name>
+   <description>MR_capm.SP.3 : min. capm spacing to via3 : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_cap2m.WID.1</name>
+   <description>MR_cap2m.WID.1 : min. cap2m width : 1.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_cap2m.SP.1</name>
+   <description>MR_cap2m.SP.1 : min. cap2m spacing : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_cap2m.SP.2</name>
+   <description>MR_cap2m.SP.2 : Min spacing of cap2m and met4 not overlapping cap2m : 0.5um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_cap2m.ENC.1</name>
+   <description>MR_cap2m.ENC.1 : min. m4 enclosure of cap2m : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_cap2m.ENC.2</name>
+   <description>MR_cap2m.ENC.2 : min. cap2m enclosure of via4 : 0.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_cap2m.SP.3</name>
+   <description>MR_cap2m.SP.3 : min. cap2m spacing to via4 : 0.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvi.1</name>
+   <description>hvi.1 : min. hvi width : 0.6um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvi.2a</name>
+   <description>hvi.2a : min. hvi spacing : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvntm.1</name>
+   <description>hvntm.1 : min. hvntm width : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvntm.2</name>
+   <description>hvntm.2 : min. hvntm spacing : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>user_project_wrapper</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+ </items>
+</report-database>
