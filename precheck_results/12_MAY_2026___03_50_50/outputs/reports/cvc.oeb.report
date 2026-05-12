@@ -1,0 +1,84 @@
+ gpio/user/analog |   in   |   out  | analog |  oeb min/sim/max  | configuration
+   0 /  0 /       |        |      2 |        | vssd*/     /vccd* | FIXED_STD_INPUT_NOPULL 2 warnings/errors
+   1 /  1 /       |        |      2 |        | vssd*/     /vccd* | FIXED_STD_INPUT_NOPULL 2 warnings/errors
+   2 /  2 /       |        |      2 |        | vssd*/     /vccd* | FIXED_STD_INPUT_NOPULL 2 warnings/errors
+   3 /  3 /       |        |      2 |        | vssd*/     /vccd* | FIXED_STD_INPUT_PULLUP 2 warnings/errors
+   4 /  4 /       |        |      2 |        | vssd*/     /vccd* | FIXED_STD_INPUT_NOPULL 2 warnings/errors
+   5 /  5 /       |        |      2 |        | vssd*/     /vccd* | INVALID missing mode 1 warnings/errors
+   6 /  6 /       |        |      2 |        | vssd*/     /vccd* | INVALID missing mode 1 warnings/errors
+   7 /  7 /   0   |        |      2 |        | vssd*/     /vccd* | INVALID missing mode 1 warnings/errors
+   8 /  8 /   1   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+   9 /  9 /   2   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  10 / 10 /   3   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  11 / 11 /   4   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  12 / 12 /   5   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  13 / 13 /   6   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  14 / 14 /   7   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  15 / 15 /   8   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  16 / 16 /   9   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  17 / 17 /  10   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  18 / 18 /  11   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  19 / 19 /  12   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  20 / 20 /  13   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  21 / 21 /  14   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  22 / 22 /  15   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  23 / 23 /  16   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  24 / 24 /  17   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  25 / 25 /  18   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  26 / 26 /  19   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  27 / 27 /  20   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  28 / 28 /  21   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  29 / 29 /  22   |        |        |        |      /     /      | INVALID missing mode 1 warnings/errors
+  30 / 30 /  23   |        |      2 |        | vssd*/     /vccd* | INVALID missing mode 1 warnings/errors
+  31 / 31 /  24   |        |      2 |        | vssd*/     /vccd* | INVALID missing mode 1 warnings/errors
+  32 / 32 /  25   |        |      2 |        | vssd*/     /vccd* | INVALID missing mode 1 warnings/errors
+  33 / 33 /  26   |        |      2 |        | vssd*/     /vccd* | INVALID missing mode 1 warnings/errors
+  34 / 34 /  27   |        |      2 |        | vssd*/     /vccd* | INVALID missing mode 1 warnings/errors
+  35 / 35 /  28   |        |      2 |        | vssd*/     /vccd* | INVALID missing mode 1 warnings/errors
+  36 / 36 /       |        |      2 |        | vssd*/     /vccd* | INVALID missing mode 1 warnings/errors
+  37 / 37 /       |        |      2 |        | vssd*/     /vccd* | INVALID missing mode 1 warnings/errors
+
+*** Detected the following warnings and/or errors: ***
+GPIO  0: Warning: user output connection to fixed input gpio - firmware override required
+GPIO  0: Warning: user oeb connection to fixed input gpio - firmware override required
+GPIO  1: Warning: user output connection to fixed input gpio - firmware override required
+GPIO  1: Warning: user oeb connection to fixed input gpio - firmware override required
+GPIO  2: Warning: user output connection to fixed input gpio - firmware override required
+GPIO  2: Warning: user oeb connection to fixed input gpio - firmware override required
+GPIO  3: Warning: user output connection to fixed input gpio - firmware override required
+GPIO  3: Warning: user oeb connection to fixed input gpio - firmware override required
+GPIO  4: Warning: user output connection to fixed input gpio - firmware override required
+GPIO  4: Warning: user oeb connection to fixed input gpio - firmware override required
+GPIO  5: ERROR: missing gpio configuration
+GPIO  6: ERROR: missing gpio configuration
+GPIO  7: ERROR: missing gpio configuration
+GPIO  8: ERROR: missing gpio configuration
+GPIO  9: ERROR: missing gpio configuration
+GPIO 10: ERROR: missing gpio configuration
+GPIO 11: ERROR: missing gpio configuration
+GPIO 12: ERROR: missing gpio configuration
+GPIO 13: ERROR: missing gpio configuration
+GPIO 14: ERROR: missing gpio configuration
+GPIO 15: ERROR: missing gpio configuration
+GPIO 16: ERROR: missing gpio configuration
+GPIO 17: ERROR: missing gpio configuration
+GPIO 18: ERROR: missing gpio configuration
+GPIO 19: ERROR: missing gpio configuration
+GPIO 20: ERROR: missing gpio configuration
+GPIO 21: ERROR: missing gpio configuration
+GPIO 22: ERROR: missing gpio configuration
+GPIO 23: ERROR: missing gpio configuration
+GPIO 24: ERROR: missing gpio configuration
+GPIO 25: ERROR: missing gpio configuration
+GPIO 26: ERROR: missing gpio configuration
+GPIO 27: ERROR: missing gpio configuration
+GPIO 28: ERROR: missing gpio configuration
+GPIO 29: ERROR: missing gpio configuration
+GPIO 30: ERROR: missing gpio configuration
+GPIO 31: ERROR: missing gpio configuration
+GPIO 32: ERROR: missing gpio configuration
+GPIO 33: ERROR: missing gpio configuration
+GPIO 34: ERROR: missing gpio configuration
+GPIO 35: ERROR: missing gpio configuration
+GPIO 36: ERROR: missing gpio configuration
+GPIO 37: ERROR: missing gpio configuration
