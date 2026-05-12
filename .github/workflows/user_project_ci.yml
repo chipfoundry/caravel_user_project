@@ -61,11 +61,11 @@ jobs:
         id: harden
         continue-on-error: true
         run: |
-          set -e
+          set -euo pipefail
           python3 .github/scripts/get_designs.py --design ${{ github.workspace }}
           for design in $(cat harden_sequence.txt); do
             mkdir -p openlane/$design/runs/ci
-            cf harden --tag ci $design | tee openlane/$design/runs/ci/ci.log
+            cf harden --tag ci --pdk ${{ matrix.pdk }} $design 2>&1 | tee openlane/$design/runs/ci/ci.log
           done
 
       - name: Upload Hardened Design
