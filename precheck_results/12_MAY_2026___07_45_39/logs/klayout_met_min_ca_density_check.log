@@ -1,0 +1,79 @@
+"polygons" in: met_min_ca_density.lydrc:35
+    Polygons (raw): 2373996 (flat)  3848 (hierarchical)
+    Elapsed: 0.220s  Memory: 1022.00M
+"polygons" in: met_min_ca_density.lydrc:36
+    Polygons (raw): 7749718 (flat)  3616 (hierarchical)
+    Elapsed: 0.120s  Memory: 1022.00M
+"polygons" in: met_min_ca_density.lydrc:38
+    Polygons (raw): 2234360 (flat)  10752 (hierarchical)
+    Elapsed: 0.160s  Memory: 1022.00M
+"polygons" in: met_min_ca_density.lydrc:39
+    Polygons (raw): 63404 (flat)  63404 (hierarchical)
+    Elapsed: 0.200s  Memory: 1022.00M
+"polygons" in: met_min_ca_density.lydrc:41
+    Polygons (raw): 22178 (flat)  22178 (hierarchical)
+    Elapsed: 0.200s  Memory: 1022.00M
+"polygons" in: met_min_ca_density.lydrc:42
+    Polygons (raw): 49591 (flat)  49591 (hierarchical)
+    Elapsed: 0.190s  Memory: 1022.00M
+"polygons" in: met_min_ca_density.lydrc:44
+    Polygons (raw): 15693 (flat)  15693 (hierarchical)
+    Elapsed: 0.170s  Memory: 1022.00M
+"polygons" in: met_min_ca_density.lydrc:45
+    Polygons (raw): 48854 (flat)  48854 (hierarchical)
+    Elapsed: 0.220s  Memory: 1022.00M
+"polygons" in: met_min_ca_density.lydrc:47
+    Polygons (raw): 1081 (flat)  1081 (hierarchical)
+    Elapsed: 0.160s  Memory: 1022.00M
+"polygons" in: met_min_ca_density.lydrc:48
+    Polygons (raw): 0 (flat)  0 (hierarchical)
+    Elapsed: 0.000s  Memory: 1022.00M
+"polygons" in: met_min_ca_density.lydrc:49
+    Polygons (raw): 12970 (flat)  12970 (hierarchical)
+    Elapsed: 0.010s  Memory: 1022.00M
+"polygons" in: met_min_ca_density.lydrc:51
+    Polygons (raw): 345 (flat)  345 (hierarchical)
+    Elapsed: 0.020s  Memory: 1022.00M
+"input" in: met_min_ca_density.lydrc:53
+    Polygons (raw): 2 (flat)  2 (hierarchical)
+    Elapsed: 0.150s  Memory: 1022.00M
+"area" in: met_min_ca_density.lydrc:55
+    Elapsed: 0.300s  Memory: 1005.00M
+"polygons" in: met_min_ca_density.lydrc:59
+    Polygons (raw): 2373996 (flat)  3848 (hierarchical)
+    Elapsed: 0.140s  Memory: 1005.00M
+"area" in: met_min_ca_density.lydrc:59
+    Elapsed: 20.490s  Memory: 1328.00M
+li1_ca_density is 0.8063325962284986
+"polygons" in: met_min_ca_density.lydrc:69
+    Polygons (raw): 2234360 (flat)  10752 (hierarchical)
+    Elapsed: 0.150s  Memory: 1328.00M
+"area" in: met_min_ca_density.lydrc:69
+    Elapsed: 21.070s  Memory: 1328.00M
+m1_ca_density is 0.9156508587620642
+"polygons" in: met_min_ca_density.lydrc:79
+    Polygons (raw): 22178 (flat)  22178 (hierarchical)
+    Elapsed: 0.200s  Memory: 1328.00M
+"area" in: met_min_ca_density.lydrc:79
+    Elapsed: 0.420s  Memory: 1361.00M
+m2_ca_density is 0.9986061017181662
+"polygons" in: met_min_ca_density.lydrc:89
+    Polygons (raw): 15693 (flat)  15693 (hierarchical)
+    Elapsed: 0.190s  Memory: 1361.00M
+"area" in: met_min_ca_density.lydrc:89
+    Elapsed: 0.330s  Memory: 1361.00M
+m3_ca_density is 0.9983377085879125
+"polygons" in: met_min_ca_density.lydrc:99
+    Polygons (raw): 1081 (flat)  1081 (hierarchical)
+    Elapsed: 0.180s  Memory: 1361.00M
+"area" in: met_min_ca_density.lydrc:99
+    Elapsed: 0.340s  Memory: 1361.00M
+m4_ca_density is 0.8357823108509106
+"polygons" in: met_min_ca_density.lydrc:109
+    Polygons (raw): 345 (flat)  345 (hierarchical)
+    Elapsed: 0.020s  Memory: 1361.00M
+"area" in: met_min_ca_density.lydrc:109
+    Elapsed: 0.230s  Memory: 1361.00M
+m5_ca_density is 0.8441720672478207
+Writing report database: /tmp/tmp5bbb3lz4/repo/precheck_results/12_MAY_2026___07_45_39/outputs/reports/klayout_met_min_ca_density_check.xml ..
+Total elapsed: 50.510s  Memory: 1337.00M
