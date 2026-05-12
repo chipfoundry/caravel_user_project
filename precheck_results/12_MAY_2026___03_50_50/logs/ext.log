@@ -1,0 +1,717 @@
+BEGIN: Tue May 12 04:13:04 2026
+Extracting as digital. Top ports unique.
+
+Magic 8.3 revision 471 - Compiled on Wed Apr 22 16:23:58 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design magicrc.well for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Loading tech file /tmp/tmpg2qwmavz/repo/precheck_results/12_MAY_2026___03_50_50/tmp/sky130A.tech
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "/tmp/tmpg2qwmavz/repo/precheck_results/12_MAY_2026___03_50_50/tmp/ext/abstract.tcl" from command line.
+Abstracting
+CIF input style is now "sky130()"
+Abstracting /tmp/tmpg2qwmavz/repo/gds/user_project_wrapper.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: user_project_wrapper
+Reading "EZ_sky130_ef_sc_hd__decap_40_12".
+Reading "EZ_sky130_fd_sc_hd__decap_3".
+Reading "EZ_sky130_fd_sc_hd__fill_1".
+Reading "EZ_sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "EZ_sky130_fd_sc_hd__fill_2".
+Reading "EZ_sky130_fd_sc_hd__fill_4".
+Reading "EZ_sky130_fd_sc_hd__buf_4".
+Reading "EZ_sky130_fd_sc_hd__fill_8".
+Reading "EZ_sky130_fd_sc_hd__diode_2".
+Reading "EZ_sky130_fd_sc_hd__buf_12".
+Reading "EZ_sky130_fd_sc_hd__clkbuf_8".
+Reading "EZ_sky130_fd_sc_hd__dlygate4sd3_1".
+Reading "EZ_sky130_fd_sc_hd__clkbuf_4".
+Reading "EZ_sky130_fd_sc_hd__buf_2".
+Reading "EZ_sky130_fd_sc_hd__dfxtp_1".
+Reading "EZ_sky130_fd_sc_hd__mux2_1".
+Reading "EZ_sky130_fd_sc_hd__dfxtp_2".
+Reading "EZ_sky130_fd_sc_hd__conb_1".
+Reading "EZ_sky130_fd_sc_hd__and2_4".
+Reading "EZ_sky130_fd_sc_hd__and2_2".
+Reading "EZ_sky130_fd_sc_hd__nand2_8".
+Reading "EZ_sky130_fd_sc_hd__nor2_2".
+Reading "EZ_sky130_fd_sc_hd__inv_2".
+Reading "EZ_sky130_fd_sc_hd__buf_6".
+Reading "EZ_sky130_fd_sc_hd__nand3b_4".
+Reading "EZ_sky130_fd_sc_hd__a211o_1".
+Reading "EZ_sky130_fd_sc_hd__nor2_1".
+Reading "EZ_sky130_fd_sc_hd__and3_1".
+Reading "EZ_sky130_fd_sc_hd__a21oi_4".
+Reading "EZ_sky130_fd_sc_hd__and2b_1".
+Reading "EZ_sky130_fd_sc_hd__buf_1".
+Reading "EZ_sky130_fd_sc_hd__a22o_1".
+Reading "EZ_sky130_fd_sc_hd__a31o_1".
+Reading "EZ_sky130_fd_sc_hd__o21a_1".
+Reading "EZ_sky130_fd_sc_hd__a221o_1".
+Reading "EZ_sky130_fd_sc_hd__a32o_1".
+Reading "EZ_sky130_fd_sc_hd__and2_1".
+Reading "EZ_sky130_fd_sc_hd__nand2_1".
+Reading "EZ_sky130_fd_sc_hd__o2bb2a_1".
+Reading "EZ_sky130_fd_sc_hd__a21oi_1".
+Reading "EZ_sky130_fd_sc_hd__o21ai_1".
+Reading "EZ_sky130_fd_sc_hd__a32o_4".
+Reading "EZ_sky130_fd_sc_hd__a21o_1".
+Reading "EZ_sky130_fd_sc_hd__or3b_2".
+Reading "EZ_sky130_fd_sc_hd__and2b_2".
+Reading "EZ_sky130_fd_sc_hd__a31o_4".
+Reading "EZ_sky130_fd_sc_hd__clkbuf_1".
+Reading "EZ_sky130_fd_sc_hd__or3b_4".
+Reading "EZ_sky130_fd_sc_hd__and4_1".
+Reading "EZ_sky130_fd_sc_hd__a41o_4".
+Reading "EZ_sky130_fd_sc_hd__and3b_4".
+Reading "EZ_sky130_fd_sc_hd__buf_8".
+Reading "EZ_sky130_fd_sc_hd__clkbuf_16".
+Reading "EZ_sky130_fd_sc_hd__dfxtp_4".
+Reading "EZ_sky130_fd_sc_hd__nor2_8".
+Reading "EZ_sky130_fd_sc_hd__or2_1".
+Reading "EZ_sky130_fd_sc_hd__o31a_1".
+Reading "EZ_sky130_fd_sc_hd__o211a_1".
+Reading "EZ_sky130_fd_sc_hd__o32a_1".
+Reading "EZ_sky130_fd_sc_hd__a31oi_1".
+Reading "EZ_sky130_fd_sc_hd__o31ai_1".
+Reading "EZ_sky130_fd_sc_hd__o211ai_4".
+Reading "EZ_sky130_fd_sc_hd__a41oi_4".
+Reading "EZ_sky130_fd_sc_hd__and4_2".
+Reading "EZ_sky130_fd_sc_hd__xor2_1".
+Reading "EZ_sky130_fd_sc_hd__or2_2".
+Reading "EZ_sky130_fd_sc_hd__nor2_4".
+Reading "EZ_sky130_fd_sc_hd__or3_4".
+Reading "EZ_sky130_fd_sc_hd__nand2_2".
+Reading "EZ_sky130_fd_sc_hd__xnor2_1".
+Reading "EZ_sky130_fd_sc_hd__and3b_1".
+Reading "EZ_sky130_fd_sc_hd__a31o_2".
+Reading "EZ_sky130_fd_sc_hd__a21bo_1".
+Reading "EZ_sky130_fd_sc_hd__a21boi_1".
+Reading "EZ_sky130_fd_sc_hd__nand2b_1".
+Reading "EZ_sky130_fd_sc_hd__xnor2_2".
+Reading "EZ_sky130_fd_sc_hd__nand4_2".
+Reading "EZ_sky130_fd_sc_hd__a41o_1".
+Reading "EZ_sky130_fd_sc_hd__and4_4".
+Reading "EZ_sky130_fd_sc_hd__clkbuf_2".
+Reading "user_proj_example".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+    50000 uses
+    55000 uses
+    60000 uses
+    65000 uses
+    70000 uses
+    75000 uses
+    80000 uses
+    85000 uses
+    90000 uses
+    95000 uses
+    100000 uses
+    105000 uses
+    110000 uses
+    115000 uses
+    120000 uses
+    125000 uses
+    130000 uses
+    135000 uses
+    140000 uses
+    145000 uses
+    150000 uses
+    155000 uses
+    160000 uses
+    165000 uses
+    170000 uses
+    175000 uses
+    180000 uses
+    185000 uses
+    190000 uses
+    195000 uses
+    200000 uses
+    205000 uses
+    210000 uses
+    215000 uses
+    220000 uses
+    225000 uses
+    230000 uses
+    235000 uses
+    240000 uses
+    245000 uses
+    250000 uses
+    255000 uses
+    260000 uses
+    265000 uses
+    270000 uses
+    275000 uses
+    280000 uses
+    285000 uses
+    290000 uses
+    295000 uses
+    300000 uses
+    305000 uses
+    310000 uses
+    315000 uses
+    320000 uses
+    325000 uses
+    330000 uses
+    335000 uses
+    340000 uses
+    345000 uses
+    350000 uses
+    355000 uses
+    360000 uses
+    365000 uses
+    370000 uses
+    375000 uses
+    380000 uses
+    385000 uses
+    390000 uses
+    395000 uses
+    400000 uses
+    405000 uses
+    410000 uses
+    415000 uses
+    420000 uses
+    425000 uses
+    430000 uses
+    435000 uses
+    440000 uses
+    445000 uses
+    450000 uses
+    455000 uses
+    460000 uses
+    465000 uses
+    470000 uses
+    475000 uses
+    480000 uses
+    485000 uses
+    490000 uses
+    495000 uses
+    500000 uses
+    505000 uses
+    510000 uses
+    515000 uses
+    520000 uses
+    525000 uses
+    530000 uses
+    535000 uses
+    540000 uses
+    545000 uses
+    550000 uses
+    555000 uses
+Reading "user_project_wrapper".
+
+TIME: read GDS: 00:00:12 
+
+
+TIME: create subcut: 00:00:00 
+
+Abstracting EZ_sky130_fd_sc_hd__fill_1
+instance count:0 port count:5
+Abstracting EZ_sky130_fd_sc_hd__fill_2
+instance count:0 port count:5
+Abstracting EZ_sky130_fd_sc_hd__fill_4
+instance count:0 port count:5
+Abstracting EZ_sky130_fd_sc_hd__fill_8
+instance count:0 port count:5
+Abstracting EZ_sky130_fd_sc_hd__tapvpwrvgnd_1
+instance count:0 port count:3
+
+TIME: create abstract: 00:00:00 
+
+Using technology "sky130A", version 1.0.493
+
+Magic 8.3 revision 471 - Compiled on Wed Apr 22 16:23:58 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design magicrc.well for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Loading tech file /tmp/tmpg2qwmavz/repo/precheck_results/12_MAY_2026___03_50_50/tmp/sky130A.tech
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "/tmp/tmpg2qwmavz/repo/precheck_results/12_MAY_2026___03_50_50/tmp/ext/extract.tcl" from command line.
+Extracting with top ports unique (digital)
+CIF input style is now "sky130()"
+Flattening 
+
+Extracting /tmp/tmpg2qwmavz/repo/gds/user_project_wrapper.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: user_project_wrapper
+Reading "EZ_sky130_ef_sc_hd__decap_40_12".
+Reading "EZ_sky130_fd_sc_hd__decap_3".
+Reading "EZ_sky130_fd_sc_hd__fill_1".
+Reading "EZ_sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "EZ_sky130_fd_sc_hd__fill_2".
+Reading "EZ_sky130_fd_sc_hd__fill_4".
+Reading "EZ_sky130_fd_sc_hd__buf_4".
+Reading "EZ_sky130_fd_sc_hd__fill_8".
+Reading "EZ_sky130_fd_sc_hd__diode_2".
+Reading "EZ_sky130_fd_sc_hd__buf_12".
+Reading "EZ_sky130_fd_sc_hd__clkbuf_8".
+Reading "EZ_sky130_fd_sc_hd__dlygate4sd3_1".
+Reading "EZ_sky130_fd_sc_hd__clkbuf_4".
+Reading "EZ_sky130_fd_sc_hd__buf_2".
+Reading "EZ_sky130_fd_sc_hd__dfxtp_1".
+Reading "EZ_sky130_fd_sc_hd__mux2_1".
+Reading "EZ_sky130_fd_sc_hd__dfxtp_2".
+Reading "EZ_sky130_fd_sc_hd__conb_1".
+Reading "EZ_sky130_fd_sc_hd__and2_4".
+Reading "EZ_sky130_fd_sc_hd__and2_2".
+Reading "EZ_sky130_fd_sc_hd__nand2_8".
+Reading "EZ_sky130_fd_sc_hd__nor2_2".
+Reading "EZ_sky130_fd_sc_hd__inv_2".
+Reading "EZ_sky130_fd_sc_hd__buf_6".
+Reading "EZ_sky130_fd_sc_hd__nand3b_4".
+Reading "EZ_sky130_fd_sc_hd__a211o_1".
+Reading "EZ_sky130_fd_sc_hd__nor2_1".
+Reading "EZ_sky130_fd_sc_hd__and3_1".
+Reading "EZ_sky130_fd_sc_hd__a21oi_4".
+Reading "EZ_sky130_fd_sc_hd__and2b_1".
+Reading "EZ_sky130_fd_sc_hd__buf_1".
+Reading "EZ_sky130_fd_sc_hd__a22o_1".
+Reading "EZ_sky130_fd_sc_hd__a31o_1".
+Reading "EZ_sky130_fd_sc_hd__o21a_1".
+Reading "EZ_sky130_fd_sc_hd__a221o_1".
+Reading "EZ_sky130_fd_sc_hd__a32o_1".
+Reading "EZ_sky130_fd_sc_hd__and2_1".
+Reading "EZ_sky130_fd_sc_hd__nand2_1".
+Reading "EZ_sky130_fd_sc_hd__o2bb2a_1".
+Reading "EZ_sky130_fd_sc_hd__a21oi_1".
+Reading "EZ_sky130_fd_sc_hd__o21ai_1".
+Reading "EZ_sky130_fd_sc_hd__a32o_4".
+Reading "EZ_sky130_fd_sc_hd__a21o_1".
+Reading "EZ_sky130_fd_sc_hd__or3b_2".
+Reading "EZ_sky130_fd_sc_hd__and2b_2".
+Reading "EZ_sky130_fd_sc_hd__a31o_4".
+Reading "EZ_sky130_fd_sc_hd__clkbuf_1".
+Reading "EZ_sky130_fd_sc_hd__or3b_4".
+Reading "EZ_sky130_fd_sc_hd__and4_1".
+Reading "EZ_sky130_fd_sc_hd__a41o_4".
+Reading "EZ_sky130_fd_sc_hd__and3b_4".
+Reading "EZ_sky130_fd_sc_hd__buf_8".
+Reading "EZ_sky130_fd_sc_hd__clkbuf_16".
+Reading "EZ_sky130_fd_sc_hd__dfxtp_4".
+Reading "EZ_sky130_fd_sc_hd__nor2_8".
+Reading "EZ_sky130_fd_sc_hd__or2_1".
+Reading "EZ_sky130_fd_sc_hd__o31a_1".
+Reading "EZ_sky130_fd_sc_hd__o211a_1".
+Reading "EZ_sky130_fd_sc_hd__o32a_1".
+Reading "EZ_sky130_fd_sc_hd__a31oi_1".
+Reading "EZ_sky130_fd_sc_hd__o31ai_1".
+Reading "EZ_sky130_fd_sc_hd__o211ai_4".
+Reading "EZ_sky130_fd_sc_hd__a41oi_4".
+Reading "EZ_sky130_fd_sc_hd__and4_2".
+Reading "EZ_sky130_fd_sc_hd__xor2_1".
+Reading "EZ_sky130_fd_sc_hd__or2_2".
+Reading "EZ_sky130_fd_sc_hd__nor2_4".
+Reading "EZ_sky130_fd_sc_hd__or3_4".
+Reading "EZ_sky130_fd_sc_hd__nand2_2".
+Reading "EZ_sky130_fd_sc_hd__xnor2_1".
+Reading "EZ_sky130_fd_sc_hd__and3b_1".
+Reading "EZ_sky130_fd_sc_hd__a31o_2".
+Reading "EZ_sky130_fd_sc_hd__a21bo_1".
+Reading "EZ_sky130_fd_sc_hd__a21boi_1".
+Reading "EZ_sky130_fd_sc_hd__nand2b_1".
+Reading "EZ_sky130_fd_sc_hd__xnor2_2".
+Reading "EZ_sky130_fd_sc_hd__nand4_2".
+Reading "EZ_sky130_fd_sc_hd__a41o_1".
+Reading "EZ_sky130_fd_sc_hd__and4_4".
+Reading "EZ_sky130_fd_sc_hd__clkbuf_2".
+Reading "user_proj_example".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+    50000 uses
+    55000 uses
+    60000 uses
+    65000 uses
+    70000 uses
+    75000 uses
+    80000 uses
+    85000 uses
+    90000 uses
+    95000 uses
+    100000 uses
+    105000 uses
+    110000 uses
+    115000 uses
+    120000 uses
+    125000 uses
+    130000 uses
+    135000 uses
+    140000 uses
+    145000 uses
+    150000 uses
+    155000 uses
+    160000 uses
+    165000 uses
+    170000 uses
+    175000 uses
+    180000 uses
+    185000 uses
+    190000 uses
+    195000 uses
+    200000 uses
+    205000 uses
+    210000 uses
+    215000 uses
+    220000 uses
+    225000 uses
+    230000 uses
+    235000 uses
+    240000 uses
+    245000 uses
+    250000 uses
+    255000 uses
+    260000 uses
+    265000 uses
+    270000 uses
+    275000 uses
+    280000 uses
+    285000 uses
+    290000 uses
+    295000 uses
+    300000 uses
+    305000 uses
+    310000 uses
+    315000 uses
+    320000 uses
+    325000 uses
+    330000 uses
+    335000 uses
+    340000 uses
+    345000 uses
+    350000 uses
+    355000 uses
+    360000 uses
+    365000 uses
+    370000 uses
+    375000 uses
+    380000 uses
+    385000 uses
+    390000 uses
+    395000 uses
+    400000 uses
+    405000 uses
+    410000 uses
+    415000 uses
+    420000 uses
+    425000 uses
+    430000 uses
+    435000 uses
+    440000 uses
+    445000 uses
+    450000 uses
+    455000 uses
+    460000 uses
+    465000 uses
+    470000 uses
+    475000 uses
+    480000 uses
+    485000 uses
+    490000 uses
+    495000 uses
+    500000 uses
+    505000 uses
+    510000 uses
+    515000 uses
+    520000 uses
+    525000 uses
+    530000 uses
+    535000 uses
+    540000 uses
+    545000 uses
+    550000 uses
+    555000 uses
+Reading "user_project_wrapper".
+
+TIME: read GDS: 00:00:12 
+
+
+TIME: add subcut: 00:00:00 
+
+Abstracting EZ_sky130_fd_sc_hd__fill_1
+Abstracting EZ_sky130_fd_sc_hd__fill_2
+Abstracting EZ_sky130_fd_sc_hd__fill_4
+Abstracting EZ_sky130_fd_sc_hd__fill_8
+Abstracting EZ_sky130_fd_sc_hd__tapvpwrvgnd_1
+
+TIME: set abstract: 00:00:00 
+
+Processing EZ_sky130_fd_sc_hd__decap_3
+Processing EZ_sky130_ef_sc_hd__decap_40_12
+Processing EZ_sky130_fd_sc_hd__buf_12
+Processing EZ_sky130_fd_sc_hd__diode_2
+Processing EZ_sky130_fd_sc_hd__clkbuf_2
+Processing EZ_sky130_fd_sc_hd__buf_1
+Processing EZ_sky130_fd_sc_hd__and2_1
+Processing EZ_sky130_fd_sc_hd__and4_1
+Processing EZ_sky130_fd_sc_hd__a31o_1
+Processing EZ_sky130_fd_sc_hd__and3_1
+Processing EZ_sky130_fd_sc_hd__and4_2
+Processing EZ_sky130_fd_sc_hd__dlygate4sd3_1
+Processing EZ_sky130_fd_sc_hd__nand2b_1
+Processing EZ_sky130_fd_sc_hd__xor2_1
+Processing EZ_sky130_fd_sc_hd__and4_4
+Processing EZ_sky130_fd_sc_hd__a21oi_1
+Processing EZ_sky130_fd_sc_hd__nand2_1
+Processing EZ_sky130_fd_sc_hd__a41o_1
+Processing EZ_sky130_fd_sc_hd__nand4_2
+Processing EZ_sky130_fd_sc_hd__xnor2_1
+Processing EZ_sky130_fd_sc_hd__dfxtp_4
+Processing EZ_sky130_fd_sc_hd__a211o_1
+Processing EZ_sky130_fd_sc_hd__a21o_1
+Processing EZ_sky130_fd_sc_hd__xnor2_2
+Processing EZ_sky130_fd_sc_hd__a22o_1
+Processing EZ_sky130_fd_sc_hd__dfxtp_2
+Processing EZ_sky130_fd_sc_hd__a21boi_1
+Processing EZ_sky130_fd_sc_hd__a21bo_1
+Processing EZ_sky130_fd_sc_hd__clkbuf_4
+Processing EZ_sky130_fd_sc_hd__o21a_1
+Processing EZ_sky130_fd_sc_hd__clkbuf_16
+Processing EZ_sky130_fd_sc_hd__a31o_2
+Processing EZ_sky130_fd_sc_hd__and3b_1
+Processing EZ_sky130_fd_sc_hd__buf_4
+Processing EZ_sky130_fd_sc_hd__inv_2
+Processing EZ_sky130_fd_sc_hd__nand2_2
+Processing EZ_sky130_fd_sc_hd__clkbuf_8
+Processing EZ_sky130_fd_sc_hd__dfxtp_1
+Processing EZ_sky130_fd_sc_hd__nor2_1
+Processing EZ_sky130_fd_sc_hd__or3_4
+Processing EZ_sky130_fd_sc_hd__nor2_4
+Processing EZ_sky130_fd_sc_hd__or2_1
+Processing EZ_sky130_fd_sc_hd__o2bb2a_1
+Processing EZ_sky130_fd_sc_hd__and2b_1
+Processing EZ_sky130_fd_sc_hd__or2_2
+Processing EZ_sky130_fd_sc_hd__mux2_1
+Processing EZ_sky130_fd_sc_hd__a41oi_4
+Processing EZ_sky130_fd_sc_hd__a21oi_4
+Processing EZ_sky130_fd_sc_hd__o211ai_4
+Processing EZ_sky130_fd_sc_hd__o31ai_1
+Processing EZ_sky130_fd_sc_hd__a31oi_1
+Processing EZ_sky130_fd_sc_hd__o32a_1
+Processing EZ_sky130_fd_sc_hd__o211a_1
+Processing EZ_sky130_fd_sc_hd__o31a_1
+Processing EZ_sky130_fd_sc_hd__nor2_8
+Processing EZ_sky130_fd_sc_hd__a32o_1
+Processing EZ_sky130_fd_sc_hd__conb_1
+Processing EZ_sky130_fd_sc_hd__buf_8
+Processing EZ_sky130_fd_sc_hd__clkbuf_1
+Processing EZ_sky130_fd_sc_hd__or3b_4
+Processing EZ_sky130_fd_sc_hd__and3b_4
+Processing EZ_sky130_fd_sc_hd__buf_6
+Processing EZ_sky130_fd_sc_hd__and2_2
+Processing EZ_sky130_fd_sc_hd__a41o_4
+Processing EZ_sky130_fd_sc_hd__a31o_4
+Processing EZ_sky130_fd_sc_hd__and2b_2
+Processing EZ_sky130_fd_sc_hd__or3b_2
+Processing EZ_sky130_fd_sc_hd__a32o_4
+Processing EZ_sky130_fd_sc_hd__o21ai_1
+Processing EZ_sky130_fd_sc_hd__a221o_1
+Processing EZ_sky130_fd_sc_hd__nand3b_4
+Processing EZ_sky130_fd_sc_hd__nand2_8
+Processing EZ_sky130_fd_sc_hd__and2_4
+Processing EZ_sky130_fd_sc_hd__nor2_2
+Processing EZ_sky130_fd_sc_hd__buf_2
+Processing user_proj_example
+Processing user_project_wrapper
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Extraction style is now "ngspice()"
+Extracting EZ_sky130_fd_sc_hd__decap_3 into EZ_sky130_fd_sc_hd__decap_3.ext:
+EZ_sky130_fd_sc_hd__decap_3: 2 warnings
+Extracting EZ_sky130_fd_sc_hd__fill_2 into EZ_sky130_fd_sc_hd__fill_2.ext:
+Extracting EZ_sky130_fd_sc_hd__tapvpwrvgnd_1 into EZ_sky130_fd_sc_hd__tapvpwrvgnd_1.ext:
+Extracting EZ_sky130_fd_sc_hd__fill_8 into EZ_sky130_fd_sc_hd__fill_8.ext:
+Extracting EZ_sky130_fd_sc_hd__fill_1 into EZ_sky130_fd_sc_hd__fill_1.ext:
+Extracting EZ_sky130_ef_sc_hd__decap_40_12 into EZ_sky130_ef_sc_hd__decap_40_12.ext:
+EZ_sky130_ef_sc_hd__decap_40_12: 2 warnings
+Extracting EZ_sky130_fd_sc_hd__fill_4 into EZ_sky130_fd_sc_hd__fill_4.ext:
+Extracting EZ_sky130_fd_sc_hd__buf_12 into EZ_sky130_fd_sc_hd__buf_12.ext:
+Extracting EZ_sky130_fd_sc_hd__diode_2 into EZ_sky130_fd_sc_hd__diode_2.ext:
+EZ_sky130_fd_sc_hd__diode_2: 1 warning
+Extracting EZ_sky130_fd_sc_hd__clkbuf_2 into EZ_sky130_fd_sc_hd__clkbuf_2.ext:
+Extracting EZ_sky130_fd_sc_hd__buf_1 into EZ_sky130_fd_sc_hd__buf_1.ext:
+Extracting EZ_sky130_fd_sc_hd__and2_1 into EZ_sky130_fd_sc_hd__and2_1.ext:
+Extracting EZ_sky130_fd_sc_hd__and4_1 into EZ_sky130_fd_sc_hd__and4_1.ext:
+Extracting EZ_sky130_fd_sc_hd__a31o_1 into EZ_sky130_fd_sc_hd__a31o_1.ext:
+Extracting EZ_sky130_fd_sc_hd__and3_1 into EZ_sky130_fd_sc_hd__and3_1.ext:
+Extracting EZ_sky130_fd_sc_hd__and4_2 into EZ_sky130_fd_sc_hd__and4_2.ext:
+Extracting EZ_sky130_fd_sc_hd__dlygate4sd3_1 into EZ_sky130_fd_sc_hd__dlygate4sd3_1.ext:
+Extracting EZ_sky130_fd_sc_hd__nand2b_1 into EZ_sky130_fd_sc_hd__nand2b_1.ext:
+Extracting EZ_sky130_fd_sc_hd__xor2_1 into EZ_sky130_fd_sc_hd__xor2_1.ext:
+Extracting EZ_sky130_fd_sc_hd__and4_4 into EZ_sky130_fd_sc_hd__and4_4.ext:
+Extracting EZ_sky130_fd_sc_hd__a21oi_1 into EZ_sky130_fd_sc_hd__a21oi_1.ext:
+Extracting EZ_sky130_fd_sc_hd__nand2_1 into EZ_sky130_fd_sc_hd__nand2_1.ext:
+Extracting EZ_sky130_fd_sc_hd__a41o_1 into EZ_sky130_fd_sc_hd__a41o_1.ext:
+Extracting EZ_sky130_fd_sc_hd__nand4_2 into EZ_sky130_fd_sc_hd__nand4_2.ext:
+Extracting EZ_sky130_fd_sc_hd__xnor2_1 into EZ_sky130_fd_sc_hd__xnor2_1.ext:
+Extracting EZ_sky130_fd_sc_hd__dfxtp_4 into EZ_sky130_fd_sc_hd__dfxtp_4.ext:
+Extracting EZ_sky130_fd_sc_hd__a211o_1 into EZ_sky130_fd_sc_hd__a211o_1.ext:
+Extracting EZ_sky130_fd_sc_hd__a21o_1 into EZ_sky130_fd_sc_hd__a21o_1.ext:
+Extracting EZ_sky130_fd_sc_hd__xnor2_2 into EZ_sky130_fd_sc_hd__xnor2_2.ext:
+Extracting EZ_sky130_fd_sc_hd__a22o_1 into EZ_sky130_fd_sc_hd__a22o_1.ext:
+Extracting EZ_sky130_fd_sc_hd__dfxtp_2 into EZ_sky130_fd_sc_hd__dfxtp_2.ext:
+Extracting EZ_sky130_fd_sc_hd__a21boi_1 into EZ_sky130_fd_sc_hd__a21boi_1.ext:
+Extracting EZ_sky130_fd_sc_hd__a21bo_1 into EZ_sky130_fd_sc_hd__a21bo_1.ext:
+Extracting EZ_sky130_fd_sc_hd__clkbuf_4 into EZ_sky130_fd_sc_hd__clkbuf_4.ext:
+Extracting EZ_sky130_fd_sc_hd__o21a_1 into EZ_sky130_fd_sc_hd__o21a_1.ext:
+Extracting EZ_sky130_fd_sc_hd__clkbuf_16 into EZ_sky130_fd_sc_hd__clkbuf_16.ext:
+Extracting EZ_sky130_fd_sc_hd__a31o_2 into EZ_sky130_fd_sc_hd__a31o_2.ext:
+Extracting EZ_sky130_fd_sc_hd__and3b_1 into EZ_sky130_fd_sc_hd__and3b_1.ext:
+Extracting EZ_sky130_fd_sc_hd__buf_4 into EZ_sky130_fd_sc_hd__buf_4.ext:
+Extracting EZ_sky130_fd_sc_hd__inv_2 into EZ_sky130_fd_sc_hd__inv_2.ext:
+Extracting EZ_sky130_fd_sc_hd__nand2_2 into EZ_sky130_fd_sc_hd__nand2_2.ext:
+Extracting EZ_sky130_fd_sc_hd__clkbuf_8 into EZ_sky130_fd_sc_hd__clkbuf_8.ext:
+Extracting EZ_sky130_fd_sc_hd__dfxtp_1 into EZ_sky130_fd_sc_hd__dfxtp_1.ext:
+Extracting EZ_sky130_fd_sc_hd__nor2_1 into EZ_sky130_fd_sc_hd__nor2_1.ext:
+Extracting EZ_sky130_fd_sc_hd__or3_4 into EZ_sky130_fd_sc_hd__or3_4.ext:
+Extracting EZ_sky130_fd_sc_hd__nor2_4 into EZ_sky130_fd_sc_hd__nor2_4.ext:
+Extracting EZ_sky130_fd_sc_hd__or2_1 into EZ_sky130_fd_sc_hd__or2_1.ext:
+Extracting EZ_sky130_fd_sc_hd__o2bb2a_1 into EZ_sky130_fd_sc_hd__o2bb2a_1.ext:
+Extracting EZ_sky130_fd_sc_hd__and2b_1 into EZ_sky130_fd_sc_hd__and2b_1.ext:
+Extracting EZ_sky130_fd_sc_hd__or2_2 into EZ_sky130_fd_sc_hd__or2_2.ext:
+Extracting EZ_sky130_fd_sc_hd__mux2_1 into EZ_sky130_fd_sc_hd__mux2_1.ext:
+Extracting EZ_sky130_fd_sc_hd__a41oi_4 into EZ_sky130_fd_sc_hd__a41oi_4.ext:
+Extracting EZ_sky130_fd_sc_hd__a21oi_4 into EZ_sky130_fd_sc_hd__a21oi_4.ext:
+Extracting EZ_sky130_fd_sc_hd__o211ai_4 into EZ_sky130_fd_sc_hd__o211ai_4.ext:
+Extracting EZ_sky130_fd_sc_hd__o31ai_1 into EZ_sky130_fd_sc_hd__o31ai_1.ext:
+Extracting EZ_sky130_fd_sc_hd__a31oi_1 into EZ_sky130_fd_sc_hd__a31oi_1.ext:
+Extracting EZ_sky130_fd_sc_hd__o32a_1 into EZ_sky130_fd_sc_hd__o32a_1.ext:
+Extracting EZ_sky130_fd_sc_hd__o211a_1 into EZ_sky130_fd_sc_hd__o211a_1.ext:
+Extracting EZ_sky130_fd_sc_hd__o31a_1 into EZ_sky130_fd_sc_hd__o31a_1.ext:
+Extracting EZ_sky130_fd_sc_hd__nor2_8 into EZ_sky130_fd_sc_hd__nor2_8.ext:
+Extracting EZ_sky130_fd_sc_hd__a32o_1 into EZ_sky130_fd_sc_hd__a32o_1.ext:
+Extracting EZ_sky130_fd_sc_hd__conb_1 into EZ_sky130_fd_sc_hd__conb_1.ext:
+Extracting EZ_sky130_fd_sc_hd__buf_8 into EZ_sky130_fd_sc_hd__buf_8.ext:
+Extracting EZ_sky130_fd_sc_hd__clkbuf_1 into EZ_sky130_fd_sc_hd__clkbuf_1.ext:
+Extracting EZ_sky130_fd_sc_hd__or3b_4 into EZ_sky130_fd_sc_hd__or3b_4.ext:
+Extracting EZ_sky130_fd_sc_hd__and3b_4 into EZ_sky130_fd_sc_hd__and3b_4.ext:
+Extracting EZ_sky130_fd_sc_hd__buf_6 into EZ_sky130_fd_sc_hd__buf_6.ext:
+Extracting EZ_sky130_fd_sc_hd__and2_2 into EZ_sky130_fd_sc_hd__and2_2.ext:
+Extracting EZ_sky130_fd_sc_hd__a41o_4 into EZ_sky130_fd_sc_hd__a41o_4.ext:
+Extracting EZ_sky130_fd_sc_hd__a31o_4 into EZ_sky130_fd_sc_hd__a31o_4.ext:
+Extracting EZ_sky130_fd_sc_hd__and2b_2 into EZ_sky130_fd_sc_hd__and2b_2.ext:
+Extracting EZ_sky130_fd_sc_hd__or3b_2 into EZ_sky130_fd_sc_hd__or3b_2.ext:
+Extracting EZ_sky130_fd_sc_hd__a32o_4 into EZ_sky130_fd_sc_hd__a32o_4.ext:
+Extracting EZ_sky130_fd_sc_hd__o21ai_1 into EZ_sky130_fd_sc_hd__o21ai_1.ext:
+Extracting EZ_sky130_fd_sc_hd__a221o_1 into EZ_sky130_fd_sc_hd__a221o_1.ext:
+Extracting EZ_sky130_fd_sc_hd__nand3b_4 into EZ_sky130_fd_sc_hd__nand3b_4.ext:
+Extracting EZ_sky130_fd_sc_hd__nand2_8 into EZ_sky130_fd_sc_hd__nand2_8.ext:
+Extracting EZ_sky130_fd_sc_hd__and2_4 into EZ_sky130_fd_sc_hd__and2_4.ext:
+Extracting EZ_sky130_fd_sc_hd__nor2_2 into EZ_sky130_fd_sc_hd__nor2_2.ext:
+Extracting EZ_sky130_fd_sc_hd__buf_2 into EZ_sky130_fd_sc_hd__buf_2.ext:
+Extracting user_proj_example into user_proj_example.ext:
+Extracting user_project_wrapper into user_project_wrapper.ext:
+Total of 5 warnings.
+
+TIME: extract: 00:07:58 
+
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 0
+Devs merged: 28
+Devs merged: 28
+Devs merged: 28
+Devs merged: 28
+Devs merged: 34
+Devs merged: 34
+Devs merged: 34
+Devs merged: 34
+Devs merged: 34
+Devs merged: 34
+Devs merged: 40
+Devs merged: 40
+Devs merged: 46
+Devs merged: 46
+Devs merged: 46
+Devs merged: 62
+Devs merged: 62
+Devs merged: 73
+Devs merged: 79
+Devs merged: 81
+Devs merged: 81
+Devs merged: 97
+Devs merged: 97
+Devs merged: 97
+Devs merged: 103
+Devs merged: 133
+Devs merged: 133
+Devs merged: 135
+Devs merged: 171
+Devs merged: 173
+Devs merged: 175
+Devs merged: 183
+Devs merged: 183
+Devs merged: 185
+Devs merged: 185
+Devs merged: 191
+Devs merged: 191
+Devs merged: 209
+Devs merged: 209
+Devs merged: 225
+Devs merged: 225
+Devs merged: 227
+Devs merged: 229
+Devs merged: 229
+Devs merged: 233
+Devs merged: 233
+Devs merged: 233
+Devs merged: 235
+Devs merged: 241
+Devs merged: 241
+Devs merged: 259
+Devs merged: 271
+Devs merged: 271
+Devs merged: 299
+Devs merged: 305
+Devs merged: 323
+Devs merged: 327
+Devs merged: 327
+Devs merged: 337
+Devs merged: 365
+Devs merged: 385
+Devs merged: 385
+Devs merged: 387
+Devs merged: 387
+Devs merged: 399
+Devs merged: 401
+Devs merged: 401
+Devs merged: 401
+Devs merged: 401
+exttospice finished.
+
+TIME: netlist: 00:00:46 
+
+Using technology "sky130A", version 1.0.493
+END: Tue May 12 04:22:35 2026
+Runtime: 0:09:31 (hh:mm:ss)

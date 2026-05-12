@@ -1,0 +1,869 @@
+{
+  "precheck": {
+    "version": "1.3.3",
+    "timestamp": "2026-05-12T04:25:05.171047+00:00",
+    "pdk": "sky130A",
+    "passed": false,
+    "checks": {
+      "topcell_check": {
+        "status": "pass",
+        "duration_s": 1.97
+      },
+      "gpio_defines": {
+        "status": "fail",
+        "duration_s": 1.17,
+        "details": "GPIO defines: Invalid directives (33): USER_CONFIG_GPIO_5_INIT=13'hXXXX USER_CONFIG_GPIO_6_INIT=13'hXXXX USER_CONFIG_GPIO_7_INIT=13'hXXXX USER_CONFIG_GPIO_8_INIT=13'hXXXX USER_CONFIG_GPIO_9_INIT=13'hXXXX USER_CONFIG_GPIO_10_INIT=13'hXXXX USER_CONFIG_GPIO_11_INIT=13'hXXXX USER_CONFIG_GPIO_12_INIT=13'hXXXX USER_CONFIG_GPIO_13_INIT=13'hXXXX USER_CONFIG_GPIO_25_INIT=13'hXXXX USER_CONFIG_GPIO_26_INIT=13'hXXXX USER_CONFIG_GPIO_27_INIT=13'hXXXX USER_CONFIG_GPIO_28_INIT=13'hXXXX USER_CONFIG_GPIO_29_INIT=13'hXXXX USER_CONFIG_GPIO_30_INIT=13'hXXXX USER_CONFIG_GPIO_31_INIT=13'hXXXX USER_CONFIG_GPIO_32_INIT=13'hXXXX USER_CONFIG_GPIO_33_INIT=13'hXXXX USER_CONFIG_GPIO_34_INIT=13'hXXXX USER_CONFIG_GPIO_35_INIT=13'hXXXX USER_CONFIG_GPIO_36_INIT=13'hXXXX USER_CONFIG_GPIO_37_INIT=13'hXXXX USER_CONFIG_GPIO_14_INIT=13'hXXXX USER_CONFIG_GPIO_15_INIT=13'hXXXX USER_CONFIG_GPIO_16_INIT=13'hXXXX USER_CONFIG_GPIO_17_INIT=13'hXXXX USER_CONFIG_GPIO_18_INIT=13'hXXXX USER_CONFIG_GPIO_19_INIT=13'hXXXX USER_CONFIG_GPIO_20_INIT=13'hXXXX USER_CONFIG_GPIO_21_INIT=13'hXXXX USER_CONFIG_GPIO_22_INIT=13'hXXXX USER_CONFIG_GPIO_23_INIT=13'hXXXX USER_CONFIG_GPIO_24_INIT=13'hXXXX"
+      },
+      "xor": {
+        "status": "pass",
+        "duration_s": 19.45
+      },
+      "klayout_feol": {
+        "status": "pass",
+        "duration_s": 286.76
+      },
+      "klayout_beol": {
+        "status": "pass",
+        "duration_s": 733.13
+      },
+      "klayout_offgrid": {
+        "status": "pass",
+        "duration_s": 180.56
+      },
+      "klayout_met_min_ca_density": {
+        "status": "pass",
+        "duration_s": 51.54
+      },
+      "klayout_pin_label_purposes_overlapping_drawing": {
+        "status": "pass",
+        "duration_s": 32.41
+      },
+      "klayout_zeroarea": {
+        "status": "pass",
+        "duration_s": 9.35
+      },
+      "spike_check": {
+        "status": "pass",
+        "duration_s": 6.45
+      },
+      "illegal_cellname_check": {
+        "status": "pass",
+        "duration_s": 2.02
+      },
+      "lvs": {
+        "status": "pass",
+        "duration_s": 721.88
+      },
+      "oeb": {
+        "status": "fail",
+        "duration_s": 7.95,
+        "details": "33 errors, 10 warnings across 38 GPIOs",
+        "report": {
+          "report_relpath": "/tmp/tmpg2qwmavz/repo/precheck_results/12_MAY_2026___03_50_50/outputs/reports/cvc.oeb.report",
+          "design_type": "caravel",
+          "gpios": [
+            {
+              "gpio": 0,
+              "user_index": 0,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "FIXED_STD_INPUT_NOPULL",
+              "resolved_mode": "FIXED_STD_INPUT_NOPULL",
+              "warning_count": 2,
+              "error_count": 0
+            },
+            {
+              "gpio": 1,
+              "user_index": 1,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "FIXED_STD_INPUT_NOPULL",
+              "resolved_mode": "FIXED_STD_INPUT_NOPULL",
+              "warning_count": 2,
+              "error_count": 0
+            },
+            {
+              "gpio": 2,
+              "user_index": 2,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "FIXED_STD_INPUT_NOPULL",
+              "resolved_mode": "FIXED_STD_INPUT_NOPULL",
+              "warning_count": 2,
+              "error_count": 0
+            },
+            {
+              "gpio": 3,
+              "user_index": 3,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "FIXED_STD_INPUT_PULLUP",
+              "resolved_mode": "FIXED_STD_INPUT_PULLUP",
+              "warning_count": 2,
+              "error_count": 0
+            },
+            {
+              "gpio": 4,
+              "user_index": 4,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "FIXED_STD_INPUT_NOPULL",
+              "resolved_mode": "FIXED_STD_INPUT_NOPULL",
+              "warning_count": 2,
+              "error_count": 0
+            },
+            {
+              "gpio": 5,
+              "user_index": 5,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 6,
+              "user_index": 6,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 7,
+              "user_index": 7,
+              "analog_index": 0,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 8,
+              "user_index": 8,
+              "analog_index": 1,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 9,
+              "user_index": 9,
+              "analog_index": 2,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 10,
+              "user_index": 10,
+              "analog_index": 3,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 11,
+              "user_index": 11,
+              "analog_index": 4,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 12,
+              "user_index": 12,
+              "analog_index": 5,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 13,
+              "user_index": 13,
+              "analog_index": 6,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 14,
+              "user_index": 14,
+              "analog_index": 7,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 15,
+              "user_index": 15,
+              "analog_index": 8,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 16,
+              "user_index": 16,
+              "analog_index": 9,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 17,
+              "user_index": 17,
+              "analog_index": 10,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 18,
+              "user_index": 18,
+              "analog_index": 11,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 19,
+              "user_index": 19,
+              "analog_index": 12,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 20,
+              "user_index": 20,
+              "analog_index": 13,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 21,
+              "user_index": 21,
+              "analog_index": 14,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 22,
+              "user_index": 22,
+              "analog_index": 15,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 23,
+              "user_index": 23,
+              "analog_index": 16,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 24,
+              "user_index": 24,
+              "analog_index": 17,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 25,
+              "user_index": 25,
+              "analog_index": 18,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 26,
+              "user_index": 26,
+              "analog_index": 19,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 27,
+              "user_index": 27,
+              "analog_index": 20,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 28,
+              "user_index": 28,
+              "analog_index": 21,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 29,
+              "user_index": 29,
+              "analog_index": 22,
+              "in": null,
+              "out": null,
+              "analog": null,
+              "oeb_min": null,
+              "oeb_sim": null,
+              "oeb_max": null,
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 30,
+              "user_index": 30,
+              "analog_index": 23,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 31,
+              "user_index": 31,
+              "analog_index": 24,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 32,
+              "user_index": 32,
+              "analog_index": 25,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 33,
+              "user_index": 33,
+              "analog_index": 26,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 34,
+              "user_index": 34,
+              "analog_index": 27,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 35,
+              "user_index": 35,
+              "analog_index": 28,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 36,
+              "user_index": 36,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            },
+            {
+              "gpio": 37,
+              "user_index": 37,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd*",
+              "oeb_sim": null,
+              "oeb_max": "vccd*",
+              "configuration": "INVALID missing mode",
+              "resolved_mode": "INVALID missing mode",
+              "warning_count": 0,
+              "error_count": 1
+            }
+          ],
+          "messages": [
+            {
+              "gpio": 0,
+              "severity": "warning",
+              "text": "user output connection to fixed input gpio - firmware override required"
+            },
+            {
+              "gpio": 0,
+              "severity": "warning",
+              "text": "user oeb connection to fixed input gpio - firmware override required"
+            },
+            {
+              "gpio": 1,
+              "severity": "warning",
+              "text": "user output connection to fixed input gpio - firmware override required"
+            },
+            {
+              "gpio": 1,
+              "severity": "warning",
+              "text": "user oeb connection to fixed input gpio - firmware override required"
+            },
+            {
+              "gpio": 2,
+              "severity": "warning",
+              "text": "user output connection to fixed input gpio - firmware override required"
+            },
+            {
+              "gpio": 2,
+              "severity": "warning",
+              "text": "user oeb connection to fixed input gpio - firmware override required"
+            },
+            {
+              "gpio": 3,
+              "severity": "warning",
+              "text": "user output connection to fixed input gpio - firmware override required"
+            },
+            {
+              "gpio": 3,
+              "severity": "warning",
+              "text": "user oeb connection to fixed input gpio - firmware override required"
+            },
+            {
+              "gpio": 4,
+              "severity": "warning",
+              "text": "user output connection to fixed input gpio - firmware override required"
+            },
+            {
+              "gpio": 4,
+              "severity": "warning",
+              "text": "user oeb connection to fixed input gpio - firmware override required"
+            },
+            {
+              "gpio": 5,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 6,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 7,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 8,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 9,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 10,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 11,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 12,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 13,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 14,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 15,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 16,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 17,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 18,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 19,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 20,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 21,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 22,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 23,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 24,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 25,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 26,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 27,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 28,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 29,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 30,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 31,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 32,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 33,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 34,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 35,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 36,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            },
+            {
+              "gpio": 37,
+              "severity": "error",
+              "text": "missing gpio configuration"
+            }
+          ],
+          "summary": {
+            "total": 38,
+            "errors": 33,
+            "warnings": 10,
+            "no_issues_banner": false
+          }
+        }
+      },
+      "magic_drc": {
+        "status": "skip",
+        "duration_s": 0,
+        "reason": "optional (use --magic-drc to include)"
+      }
+    },
+    "input_file_hash": "7dedb0577fede3bf2014261de4d5e78fb372daa1"
+  }
+}
