@@ -70,7 +70,7 @@ jobs:
       - name: Upload Hardened Design
         uses: actions/upload-artifact@v4
         with:
-          name: harden-${{ matrix.pdk }}
+          name: design-${{ matrix.pdk }}
           path: |
             ${{ github.workspace }}/gds
             ${{ github.workspace }}/signoff
