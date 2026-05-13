@@ -70,7 +70,7 @@ jobs:
       - name: Upload Hardened Design
         uses: actions/upload-artifact@v4
         with:
-          name: design-${{ matrix.pdk }}
+          name: harden-${{ matrix.pdk }}
           path: |
             ${{ github.workspace }}/gds
             ${{ github.workspace }}/signoff
@@ -295,7 +295,7 @@ jobs:
       - name: Upload precheck artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: design-${{ matrix.pdk }}
+          name: precheck-${{ matrix.pdk }}
           path: |
             ${{ github.workspace }}/precheck_results
           retention-days: 1
