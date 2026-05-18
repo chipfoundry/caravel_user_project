@@ -58,11 +58,13 @@ jobs:
           cf setup --pdk ${{ matrix.pdk }} --only-openlane --only-pdk
 
       - name: Harden Designs
+        id: harden
+        continue-on-error: true
         run: |
-          set -e
+          set -euo pipefail
           python3 .github/scripts/get_designs.py --design ${{ github.workspace }}
           for design in $(cat harden_sequence.txt); do
-            cf harden $design || exit 1
+            cf harden --tag ci --pdk ${{ matrix.pdk }} $design
           done
 
       - name: Upload Hardened Design
@@ -72,8 +74,13 @@ jobs:
           path: |
             ${{ github.workspace }}/gds
             ${{ github.workspace }}/signoff
+            ${{ github.workspace }}/*lane/*/runs/ci
             ${{ github.workspace }}/.cf/project.json
           retention-days: 1
+
+      - name: Fail if harden failed
+        if: steps.harden.outcome == 'failure'
+        run: exit 1
 
   rtl-verification:
     timeout-minutes: 720
@@ -210,8 +217,37 @@ jobs:
           name: design-${{ matrix.pdk }}
           path: ${{ github.workspace }}
 
-      - name: Configure GPIO (non-interactive)
+      - name: Detect default design
+        id: default_design
         run: |
+          set -e
+
+          UPW="verilog/rtl/user_project_wrapper.v"
+          UPE="verilog/rtl/user_proj_example.v"
+          UD="verilog/rtl/user_defines.v"
+
+          # Replace these with the known-good checksums for the default design
+          DEFAULT_UPW_SHA256="db2d0bd579f1a7db73f46d838ed2af1e88aa3d73585a7c23db6e4203762081ca"
+          DEFAULT_UPE_SHA256="af1666e007dca72d851932f0a88370897302287088fa03d8687d10c607fa5e9d"
+          DEFAULT_UD_SHA256="ab6e82ca9b069050b77ac0f74c5c9574f6a0eb4a09f96245490e89bd0f6ce6f7"
+
+          upw_sha=$(sha256sum "$UPW" | awk '{print $1}')
+          upe_sha=$(sha256sum "$UPE" | awk '{print $1}')
+          ud_sha=$(sha256sum "$UD" | awk '{print $1}')
+
+          if [[ "$upw_sha" == "$DEFAULT_UPW_SHA256" && \
+                "$upe_sha" == "$DEFAULT_UPE_SHA256" && \
+                "$ud_sha" == "$DEFAULT_UD_SHA256" ]]; then
+            echo "is_default=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "is_default=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Override INVALID GPIO definitions for default design only
+        if: steps.default_design.outputs.is_default == 'true'
+        run: |
+          echo "Default design detected. Applying INVALID GPIO overrides."
+
           python3 <<EOF
           import json
           from pathlib import Path
@@ -231,6 +267,39 @@ jobs:
               json.dump(data, f, indent=2)
           EOF
 
+          # Set gpio 5, 6, 7, 30-37 to USER_STD_OUTPUT for default user defines
+          sed -i -e '/USER_CONFIG_GPIO_[3567]/s/INVALID/USER_STD_OUTPUT/' \
+              -e '/USER_CONFIG/s/INVALID/MGMT_STD_ANALOG/' verilog/rtl/user_defines.v
+
       - name: Run Precheck
+        id: run_precheck
+        continue-on-error: true
         run: |
           cf precheck
+
+          precheck_status=$?
+
+          if [[ $precheck_status -ne 0 ]]; then
+            echo "Precheck command failed with status $precheck_status"
+            exit $precheck_status
+          fi
+
+          error_count=$(grep -c "ERROR" precheck_results/*/logs/precheck.log || true)
+          if [[ $error_count -eq 0 ]]; then
+            exit 0
+          fi
+
+          echo "Precheck completed, but not all checks passed."
+          exit 2
+
+      - name: Upload precheck artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: precheck-${{ matrix.pdk }}
+          path: |
+            ${{ github.workspace }}/precheck_results
+          retention-days: 1
+
+      - name: Fail if precheck failed
+        if: steps.run_precheck.outcome == 'failure'
+        run: exit 1
